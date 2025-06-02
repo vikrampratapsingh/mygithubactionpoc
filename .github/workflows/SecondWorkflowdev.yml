@@ -1,4 +1,4 @@
-name: Firts Workflow + Name of the Workflow
+name: SecondWorkflow
 # Tiiger part
 on:
   push:
@@ -7,10 +7,10 @@ jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
-      -  name: first step
+      -  name: first step Dev
          run: echo "First worlflow"
   Second-job:
     runs-on: windows-latest
     steps:
-      -  name: Second step
+      -  name: SecondWorkflow Dev
          run: echo "worlflow"
