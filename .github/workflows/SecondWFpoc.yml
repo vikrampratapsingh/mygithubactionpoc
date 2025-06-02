@@ -12,5 +12,5 @@ jobs:
   Second-job:
     runs-on: windows-latest
     steps:
-      -  name: Second step
+      -  name: Second Workflow New Flow step
          run: echo "worlflow"
