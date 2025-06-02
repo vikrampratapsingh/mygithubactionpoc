@@ -9,3 +9,8 @@ jobs:
     steps:
       -  name: first step
          run: echo "First worlflow"
+  Second-job:
+    runs-on: windows-latest
+    steps:
+      -  name: Second step
+         run: echo "worlflow"
