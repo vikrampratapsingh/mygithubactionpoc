@@ -1,4 +1,4 @@
-name: Firts Workflow + Name of the Workflow
+name: Second Workflow
 # Tiiger part
 on:
   push:
