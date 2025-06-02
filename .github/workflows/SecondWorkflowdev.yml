@@ -2,6 +2,9 @@ name: SecondWorkflow
 # Tiiger part
 on:
   push:
+  workflow_dispatch:
+  schedule:
+    - cron: ' * * * * * '
 
 jobs:
   first-job:
@@ -9,8 +12,4 @@ jobs:
     steps:
       -  name: first step Dev
          run: echo "First worlflow"
-  Second-job:
-    runs-on: windows-latest
-    steps:
-      -  name: SecondWorkflow Dev
-         run: echo "worlflow"
+  
