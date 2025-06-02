@@ -1,0 +1,11 @@
+name: Firts Workflow + Name of the Workflow
+# Tiiger part
+on:
+  push:
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      -  name: first step
+         run: echo "First worlflow"
