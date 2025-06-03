@@ -7,10 +7,11 @@ on:
   workflow_dispatch:
     inputs:
       debug:
-      type: boolean
-      default: false
-  jobs:
-    inputs:
+        type: boolean
+        default: false
+jobs:
+  inputs:
     runs-on: ubuntu-latest
-    steps: inputs
-    run: echo "Input"
+    steps: 
+      - name: inputs
+        run: echo "Input"
