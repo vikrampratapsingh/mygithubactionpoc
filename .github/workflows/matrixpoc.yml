@@ -14,7 +14,7 @@ on:
           -  ubuntu-latest
           -  windows-latest
       steps:
-        -  uses: action/setup-nodejs@v4
+        -  uses: action/setup-node@v4
            with:
            node-version: ${{matrix.node-version}}
       
