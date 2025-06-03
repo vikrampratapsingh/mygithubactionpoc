@@ -9,5 +9,6 @@ jobs:
     steps:
       - name: Variables
         run: echo " Value for Varibales stored ${{vars.MY_VAR}}"
+        run: echo "Secret API Key value to be used ${{secrets.API_KEY}}"
   
   
