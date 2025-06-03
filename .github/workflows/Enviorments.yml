@@ -1,20 +1,16 @@
-name: Enviorments
+name: 10 - workflow environment
 
 on:
-  push:
-  workflow_dispatch:
-      inputs:
-        TARGET_ENVIRONMENT:
-        type:  enviorment
-        default: dev
-
-  jobs:
-      echo-enviorment:
-        runs-on: ubuntu-latest
-        enviorment: ${{ inputs.TARGET_ENVIORMENT}}
-        steps:
-          - name: ECHO vars
-            run: |
-              echo "Secret varibles ${{secrets.DEV_SECRET}}"
-              echo "Var is ${{vars.ENV_VARDEV}}"
-        
+ workflow_dispatch:
+  inputs:
+   target-env:
+    type: environment
+    default: Prod
+jobs:
+ echo:
+  runs-on: ubuntu-latest
+  environment: ${{inputs.target-env}}
+  steps:
+   - name: echo vars
+     run: |
+      echo "Env variables is: ${{vars.PROD_VAR}}"
