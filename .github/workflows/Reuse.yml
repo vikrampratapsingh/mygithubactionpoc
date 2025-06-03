@@ -1,4 +1,4 @@
-name: Maion Workflow
+name: Call main Workflow
 
 on:
   push:
