@@ -1,7 +1,7 @@
 name: How to define Varibales
 
 on:
-  workflow_disptach:
+  workflow_dispatch:
 
 jobs:
   variables:
