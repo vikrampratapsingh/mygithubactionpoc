@@ -2,13 +2,13 @@ name: Enviorments
 
 on:
   push:
-    workflow_dispatch:
+  workflow_dispatch:
       inputs:
         TARGET_ENVIRONMENT:
         type:  enviorment
         default: dev
 
-    jobs:
+  jobs:
       echo-enviorment:
         runs-on: ubuntu-latest
         enviorment: ${{ inputs.TARGET_ENVIORMENT}}
