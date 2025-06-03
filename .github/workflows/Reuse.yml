@@ -1,0 +1,11 @@
+name: Maion Workflow
+
+on:
+  push:
+
+jobs:
+  use-resusable-workflow:
+    uses:  ./.github/workflows/ReusableWorkflow.yml
+    with:
+      message: "hello Calling from Main Workflow"
+  
