@@ -1,0 +1,20 @@
+name: Enviorments
+
+on:
+  push:
+    workflow_dispatch:
+      inputs:
+        TARGET_ENVIRONMENT:
+        type:  enviorment
+        default: dev
+
+    jobs:
+      echo-enviorment:
+        runs-on: ubuntu-latest
+        enviorment: ${{ inputs.TARGET_ENVIORMENT}}
+        steps:
+          - name: ECHO vars
+            run: |
+              echo "Secret varibles ${{secrets.DEV_SECRET}}"
+              echo "Var is ${{vars.ENV_VARDEV}}"
+        
