@@ -9,7 +9,7 @@ on:
     runs-on: ${{matrix.os}}
     strategy:
       matrix:
-        node-version: [v22.6.0 , v21.7.3]
+        node-version: [v18.0.0 , v21.0.0]
         os:
           -  ubuntu-latest
           -  windows-latest
