@@ -9,12 +9,12 @@ on:
     runs-on: ${{matrix.os}}
     strategy:
       matrix:
-        node-version: [v18.0.0 , v21.0.0]
+        node-version: [v22.6.0 , v21.7.3]
         os:
           -  ubuntu-latest
           -  windows-latest
       steps:
-        -  uses: action/setup-node@v4
+        -  uses: action/setup-node@v4.0.1
            with:
            node-version: ${{matrix.node-version}}
       
