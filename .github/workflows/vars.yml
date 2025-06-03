@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Variables
-        run: echo " value for Varibales stored ${{vars.MY_VAR}}
+        run: echo " Value for Varibales stored ${{vars.MY_VAR}}"
   
   
