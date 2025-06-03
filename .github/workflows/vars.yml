@@ -1,4 +1,4 @@
-name: varibles
+name: How to define Varibales
 
 on:
   workflow_disptach:
@@ -7,7 +7,7 @@ jobs:
   variables:
     runs-on: ubuntu-latest
     steps:
-      - name: variables
+      - name: Variables
         run: echo " value for Varibales stored ${{vars.MY_VAR}}
   
   
